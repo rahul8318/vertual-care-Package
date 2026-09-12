@@ -42,7 +42,7 @@ function CareItemCard({ item }: { item: CareItem }) {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <motion.div
-        className={`relative cursor-pointer rounded-[24px] border-2 border-dashed border-white/60 bg-white/30 p-5 transition-all duration-300 ${
+        className={`relative rounded-[24px] border-2 border-dashed border-white/60 bg-white/30 p-5 transition-all duration-300 ${
           open
             ? "border-solid border-rose-200/50 bg-white/50"
             : "hover:border-rose-200/40 hover:bg-white/45"
@@ -86,6 +86,7 @@ function CareItemCard({ item }: { item: CareItem }) {
               animate={{ height: "auto", opacity: 1, y: 0 }}
               exit={{ height: 0, opacity: 0, y: -10 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="text-base text-plumSoft sm:text-lg">
                 {item.content}
