@@ -35,6 +35,8 @@ body {
     ),
     linear-gradient(180deg, #fffaf4 0%, #fff5f8 38%, #fffaf6 100%);
   color: #3d2a36;
+  font-family: "Manrope", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
 }
 
 * {
@@ -43,6 +45,23 @@ body {
 
 ::selection {
   background: rgba(214, 146, 175, 0.25);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(221, 146, 175, 0.3);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(221, 146, 175, 0.5);
 }
 
 @media (prefers-reduced-motion: reduce) {

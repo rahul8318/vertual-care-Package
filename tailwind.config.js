@@ -3,18 +3,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['"Cormorant Garamond"', "serif"],
+        body: ["Manrope", "sans-serif"],
+        sans: ["Manrope", "sans-serif"],
+      },
       colors: {
+        plum: "#3d2a36",
+        plumSoft: "#624c59",
+        rose: "#d989a6",
         blush: "#f8dfe9",
         lavender: "#e8def9",
         cream: "#fffaf4",
         peach: "#f9e3d0",
-        plum: "#3d2a36",
-        plumSoft: "#624c59",
-        rose: "#d989a6",
       },
-      fontFamily: {
-        display: ['"Cormorant Garamond"', "serif"],
-        sans: ["Manrope", "sans-serif"],
+      backgroundImage: {
+        "cream-gradient":
+          "linear-gradient(180deg, #fffaf4 0%, #fff5f8 38%, #fffaf6 100%)",
       },
       boxShadow: {
         soft: "0 24px 70px rgba(122, 82, 97, 0.12)",
