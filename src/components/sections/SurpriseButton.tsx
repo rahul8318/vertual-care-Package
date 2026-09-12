@@ -59,9 +59,9 @@ export function SurpriseButton({ onRevealComplete }: SurpriseButtonProps) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.6, type: "spring" }}
         >
-          <motion.button
+            <motion.button
             onClick={handleClick}
-            className="relative rounded-full bg-gradient-to-r from-rose-400 via-pink-400 to-violet-400 px-10 py-5 text-xl font-semibold text-white shadow-2xl"
+            className="relative rounded-full bg-gradient-to-r from-rose-400 via-pink-400 to-violet-400 px-8 py-4 text-lg font-semibold text-white shadow-2xl sm:px-10 sm:py-5 sm:text-xl"
             whileHover={{
               scale: 1.05,
               boxShadow: "0 0 40px rgba(236, 72, 153, 0.5)",
@@ -104,7 +104,7 @@ export function SurpriseButton({ onRevealComplete }: SurpriseButtonProps) {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="relative rounded-[26px] border border-white/60 bg-white/70 p-8 shadow-2xl backdrop-blur-md max-w-md text-center"
+              className="relative rounded-[26px] border border-white/60 bg-white/70 p-6 shadow-2xl backdrop-blur-md max-w-sm text-center sm:p-8"
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.7 }}

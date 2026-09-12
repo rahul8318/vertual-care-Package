@@ -101,7 +101,7 @@ export function PackageOpening({ onComplete }: { onComplete: () => void }) {
         transition={{ delay: 0.2, duration: 0.8, ease: "backOut" }}
       >
         <motion.div
-          className="relative flex h-64 w-64 items-center justify-center rounded-[32px] border-2 border-white/80 bg-gradient-to-br from-pink-200 via-rose-100 to-violet-200 shadow-2xl"
+          className="relative flex h-52 w-52 items-center justify-center sm:h-64 sm:w-64 rounded-[32px] border-2 border-white/80 bg-gradient-to-br from-pink-200 via-rose-100 to-violet-200 shadow-2xl"
           initial={{
             clipPath: "inset(0 0 0 0)",
             opacity: 1,
@@ -129,7 +129,7 @@ export function PackageOpening({ onComplete }: { onComplete: () => void }) {
         </motion.div>
 
         <motion.div
-          className="absolute -z-10 h-80 w-80 rounded-full bg-pink-200/30 blur-3xl"
+          className="absolute -z-10 h-64 w-64 sm:h-80 sm:w-80 rounded-full bg-pink-200/30 blur-3xl"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1.5 }}
           transition={{ duration: 1.5, ease: "easeOut" }}

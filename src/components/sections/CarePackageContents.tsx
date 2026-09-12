@@ -81,7 +81,7 @@ function CareItemCard({ item }: { item: CareItem }) {
           {open && (
             <motion.div
               key="content"
-              className="mt-5 border-t border-white/40 pt-4"
+              className="mt-5 border-t border-white/40 pt-4 overflow-y-auto max-h-[60vh]"
               initial={{ height: 0, opacity: 0, y: -10 }}
               animate={{ height: "auto", opacity: 1, y: 0 }}
               exit={{ height: 0, opacity: 0, y: -10 }}

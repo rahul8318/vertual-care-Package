@@ -106,8 +106,8 @@ export function YouKnowWhat() {
               >
                 I used to think "best friend" was a pretty high bar.
                 <br className="hidden sm:inline" />
-                <span className="sm:hidden"> </span>
                 Now I'm pretty sure I invented a whole new category just
+                <br className="inline sm:hidden" />
                 for you.
               </motion.p>
 

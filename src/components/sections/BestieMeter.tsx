@@ -15,7 +15,7 @@ export function BestieMeter() {
 
   return (
     <motion.div
-      className="w-full text-center"
+      className="relative w-full text-center"
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

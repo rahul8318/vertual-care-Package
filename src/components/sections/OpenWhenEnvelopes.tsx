@@ -173,7 +173,7 @@ function EnvelopeCard({
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center rounded-[20px] bg-white/70 p-6 text-center backdrop-blur-sm"
+              className="absolute inset-0 flex flex-col items-center justify-center overflow-y-auto rounded-[20px] bg-white/70 p-6 text-center backdrop-blur-sm max-h-[70vh]"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
