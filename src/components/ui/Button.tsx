@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { motion, TargetAndTransition } from "framer-motion";
 
 interface ButtonProps {
   children: ReactNode;
@@ -7,8 +7,8 @@ interface ButtonProps {
   className?: string;
   variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
-  whileHover?: object;
-  whileTap?: object;
+  whileHover?: TargetAndTransition;
+  whileTap?: TargetAndTransition;
   type?: "button" | "submit" | "reset";
 }
 
