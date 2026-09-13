@@ -7,6 +7,7 @@ import { ThenVsNow } from "./components/package/ThenVsNow";
 import { CarePackageContents, CareItem } from "./components/sections/CarePackageContents";
 import { OpenWhenEnvelopes } from "./components/sections/OpenWhenEnvelopes";
 import { Reminders } from "./components/sections/Reminders";
+import { PhotoFrame } from "./components/sections/PhotoFrame";
 import { YouKnowWhat } from "./components/sections/YouKnowWhat";
 import { BestieMeter } from "./components/sections/BestieMeter";
 import { SurpriseButton } from "./components/sections/SurpriseButton";
@@ -217,6 +218,11 @@ function MainContent() {
       {/* Reminders */}
       <SectionWrapper delay={0.15}>
         <Reminders />
+      </SectionWrapper>
+
+      {/* Photo Frame */}
+      <SectionWrapper delay={0.15}>
+        <PhotoFrame />
       </SectionWrapper>
 
       {/* You Know What */}
