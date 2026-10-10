@@ -130,20 +130,21 @@ export function RandomCareMessage() {
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <motion.div
-                className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-200/50 via-pink-200/50 to-violet-200/50 px-5 py-2 text-xs font-semibold text-plum backdrop-blur-sm"
+                className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-200/50 via-pink-200/50 to-violet-200/50 px-4 py-1.5 text-xs font-semibold text-plum backdrop-blur-sm sm:px-5 sm:py-2 sm:text-sm whitespace-nowrap"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <motion.span
-                  className="h-4 w-4"
+                  className="h-3 w-3 sm:h-4 sm:w-4"
                   animate={{ rotate: [0, 180, 360] }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
                   <Sparkles className="h-full w-full fill-current " />
                 </motion.span>
-                Just for you
-                <Heart className="h-4 w-4 fill-current" />
+                <span className="hidden sm:inline">Just for you</span>
+                <span className="sm:hidden">For you</span>
+                <Heart className="h-3 w-3 fill-current sm:h-4 sm:w-4" />
               </motion.div>
 
               <motion.div

@@ -59,14 +59,15 @@ export function EmotionalMessage() {
           transition={{ delay: 0.3, duration: 0.7, ease: "easeOut" }}
         >
           <motion.div
-            className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-200/50 via-pink-200/50 to-violet-200/50 px-5 py-2 text-xs font-semibold text-plum backdrop-blur-sm"
+            className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-200/50 via-pink-200/50 to-violet-200/50 px-4 py-1.5 text-xs font-semibold text-plum backdrop-blur-sm sm:px-5 sm:py-2 sm:text-sm whitespace-nowrap"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <Heart className="h-4 w-4 fill-current" />
-            A note from my heart
-            <Heart className="h-4 w-4 fill-current" />
+            <Heart className="h-3 w-3 fill-current sm:h-4 sm:w-4" />
+            <span className="hidden sm:inline">A note from my heart</span>
+            <span className="sm:hidden">From my heart</span>
+            <Heart className="h-3 w-3 fill-current sm:h-4 sm:w-4" />
           </motion.div>
 
           <div className="space-y-3 text-sm leading-relaxed text-plum sm:text-base lg:text-lg">
